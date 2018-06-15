@@ -11,7 +11,7 @@ namespace Conditionals
         static void Main(string[] args)
         {
             //Example for if/else statements
-            int hour = 10;
+            /*int hour = 10;
 
             if (hour > 0 && hour < 12)
             {
@@ -24,7 +24,20 @@ namespace Conditionals
             else
             {
                 Console.WriteLine("It's evening");
-            }
+            }*/
+
+            //Example using conditional operator
+            bool isGoldCustomer = true;
+
+            //float price;
+            //if(isGoldCustomer)
+            //price = 19.95f;
+            //else
+            //price = 29.95f;
+
+            float price = (isGoldCustomer) ? 19.95f : 29.95f;
+
+            Console.WriteLine(price);
         }
     }
 }
