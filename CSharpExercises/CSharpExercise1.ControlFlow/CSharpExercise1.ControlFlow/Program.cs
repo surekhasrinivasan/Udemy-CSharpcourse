@@ -10,8 +10,11 @@ namespace CSharpExercise1.ControlFlow
     {
         static void Main(string[] args)
         {
-            Conditionals question1 = new Conditionals();
-            question1.Question1();
+            //Conditionals question1 = new Conditionals();
+            //question1.Question1();
+
+            Conditionals question2 = new Conditionals();
+            question2.Question2();
         }
     }
 }

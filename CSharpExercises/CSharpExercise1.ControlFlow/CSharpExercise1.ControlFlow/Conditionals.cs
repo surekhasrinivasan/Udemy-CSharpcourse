@@ -28,5 +28,23 @@ namespace CSharpExercise1.ControlFlow
                 Console.WriteLine("Number Invalid");
             }
         }
+
+        //Question-2
+
+        // Write a program which takes two numbers from the console and displays the maximum of the two.
+
+        public void Question2()
+        {
+            Console.WriteLine("Enter a number: ");
+            var num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter another number: ");
+            var num2 = Convert.ToInt32(Console.ReadLine());
+
+            if (num1 > num2)
+                Console.WriteLine("Maximum of two is two numbers is: " + num1);
+            else
+                Console.WriteLine("Maximum of two is two numbers is: " + num2);
+        }
     }
 }
