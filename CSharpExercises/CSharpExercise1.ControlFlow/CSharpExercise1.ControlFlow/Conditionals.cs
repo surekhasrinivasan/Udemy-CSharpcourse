@@ -41,10 +41,13 @@ namespace CSharpExercise1.ControlFlow
             Console.WriteLine("Enter another number: ");
             var num2 = Convert.ToInt32(Console.ReadLine());
 
-            if (num1 > num2)
-                Console.WriteLine("Maximum of two is two numbers is: " + num1);
-            else
-                Console.WriteLine("Maximum of two is two numbers is: " + num2);
+            //if (num1 > num2)
+            //    Console.WriteLine("Maximum of two numbers is: " + num1);
+            //else
+            //    Console.WriteLine("Maximum of two numbers is: " + num2);
+
+            var max = (num1 > num2) ? num1 : num2;
+            Console.WriteLine("Maximum of two numbers is: " + max);
         }
     }
 }
