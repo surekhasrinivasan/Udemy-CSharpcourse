@@ -13,8 +13,11 @@ namespace CSharpExercise1.ControlFlow
             //Conditionals question1 = new Conditionals();
             //question1.Question1();
 
-            Conditionals question2 = new Conditionals();
-            question2.Question2();
+            //Conditionals question2 = new Conditionals();
+            //question2.Question2();
+
+            Conditionals question3 = new Conditionals();
+            question3.Question3();
         }
     }
 }

@@ -49,5 +49,24 @@ namespace CSharpExercise1.ControlFlow
             var max = (num1 > num2) ? num1 : num2;
             Console.WriteLine("Maximum of two numbers is: " + max);
         }
+
+        //Question-3
+
+        // Write a program and ask the user to enter the width and height of an image. Then tell if the image 
+        // is landscape or portrait.
+
+        public void Question3()
+        {
+            Console.WriteLine("Enter the image width: ");
+            var width = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the image height: ");
+            var height = Convert.ToInt32(Console.ReadLine());
+
+            if (width > height)
+                Console.WriteLine("Image orientation is landscape");
+            else
+                Console.WriteLine("Image orientation is portrait");
+        }        
     }
 }
