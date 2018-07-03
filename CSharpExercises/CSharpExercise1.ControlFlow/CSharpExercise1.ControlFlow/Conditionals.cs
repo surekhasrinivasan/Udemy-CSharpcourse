@@ -63,10 +63,18 @@ namespace CSharpExercise1.ControlFlow
             Console.WriteLine("Enter the image height: ");
             var height = Convert.ToInt32(Console.ReadLine());
 
-            if (width > height)
-                Console.WriteLine("Image orientation is landscape");
-            else
-                Console.WriteLine("Image orientation is portrait");
-        }        
+            //if (width > height)
+            //    Console.WriteLine("Image orientation is landscape");
+            //else
+            //    Console.WriteLine("Image orientation is portrait");
+            var orientation = (width > height) ? ImageOrientation.Landscape : ImageOrientation.Portrait;
+            Console.WriteLine("Image Orientation is: " + orientation);
+        }
+
+        public enum ImageOrientation
+        {
+            Landscape,
+            Portrait
+        }
     }
 }
