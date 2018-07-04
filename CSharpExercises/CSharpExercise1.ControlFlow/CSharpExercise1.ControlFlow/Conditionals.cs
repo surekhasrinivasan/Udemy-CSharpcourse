@@ -96,7 +96,15 @@ namespace CSharpExercise1.ControlFlow
 
             if (carSpeed <= speedLimit)
                 Console.WriteLine("Speed OK");
-            
+            else
+            {
+                const int kmPerDemeritPoint = 5;
+                var demeritPoints = (carSpeed - speedLimit) / kmPerDemeritPoint;
+                if (demeritPoints > 12)
+                    Console.WriteLine("License Suspended");
+                else
+                    Console.WriteLine("Demerit Points: " + demeritPoints);
+            }
         }
     }
 }
