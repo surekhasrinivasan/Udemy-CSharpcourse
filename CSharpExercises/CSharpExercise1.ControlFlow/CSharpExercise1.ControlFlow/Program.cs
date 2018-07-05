@@ -22,8 +22,11 @@ namespace CSharpExercise1.ControlFlow
             //Conditionals question4 = new Conditionals();
             //question4.Question4();
 
-            Loops question1 = new Loops();
-            question1.Question1();
+            //Loops question1 = new Loops();
+            //question1.Question1();
+
+            Loops question2 = new Loops();
+            question2.Question2();
         }
     }
 }
