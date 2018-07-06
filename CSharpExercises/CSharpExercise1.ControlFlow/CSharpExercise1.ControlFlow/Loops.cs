@@ -62,5 +62,31 @@ namespace CSharpExercise1.ControlFlow
             //Console.WriteLine("The factorial of " + number + " is: " + factorial);
             Console.WriteLine("{0}! = {1}", number, factorial);
         }
+
+        //Question-4
+
+        // Write a program that picks a random number between 1 and 10. Give the user 4 chances to guess the number. 
+        // If the user guesses the number, display “You won". Otherwise, display “You lost".
+
+        public void Question4()
+        {
+            var number = new Random().Next(1, 10);
+
+            Console.WriteLine("Magic number: " + number);
+
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine("Enter the magic number: ");
+                var guess = Convert.ToInt32(Console.ReadLine());
+
+                if (guess == number)
+                {
+                    Console.WriteLine("You Won");
+                    return;
+                }                
+            }
+
+            Console.WriteLine("You Lost");
+        }
     }
 }
