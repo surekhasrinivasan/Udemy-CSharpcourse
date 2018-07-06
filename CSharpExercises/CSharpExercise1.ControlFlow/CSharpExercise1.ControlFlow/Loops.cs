@@ -59,7 +59,8 @@ namespace CSharpExercise1.ControlFlow
             for (int i = 1; i <= number; i++)
                 factorial *= i;
 
-            Console.WriteLine("The factorial of " + number + " is: " + factorial);
+            //Console.WriteLine("The factorial of " + number + " is: " + factorial);
+            Console.WriteLine("{0}! = {1}", number, factorial);
         }
     }
 }
