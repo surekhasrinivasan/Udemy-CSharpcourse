@@ -43,5 +43,23 @@ namespace CSharpExercise1.ControlFlow
             }
             Console.WriteLine("Sum of all the entered numbers is: " + sum);
         }
+
+        //Question-3
+
+        // Write a program which takes a single argument from the console, computes the factorial and prints the 
+        // value on the console. For example, if the user enters 5, the program should calculate 5 x 4 x 3 x 2 x 1 
+        // and display it as 5! = 120.
+
+        public void Question3()
+        {
+            Console.WriteLine("Enter a number: ");
+            var number = Convert.ToInt32(Console.ReadLine());
+
+            var factorial = 1;
+            for (int i = 1; i <= number; i++)
+                factorial *= i;
+
+            Console.WriteLine("The factorial of " + number + " is: " + factorial);
+        }
     }
 }
