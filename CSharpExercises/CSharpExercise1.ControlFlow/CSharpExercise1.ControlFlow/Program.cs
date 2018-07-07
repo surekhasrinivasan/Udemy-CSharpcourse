@@ -31,8 +31,11 @@ namespace CSharpExercise1.ControlFlow
             //Loops question3 = new Loops();
             //question3.Question3();
 
-            Loops question4 = new Loops();
-            question4.Question4();
+            //Loops question4 = new Loops();
+            //question4.Question4();
+
+            Loops question5 = new Loops();
+            question5.Question5();
         }
     }
 }
