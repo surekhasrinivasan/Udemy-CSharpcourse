@@ -46,7 +46,7 @@ namespace CSharpExercise2.ArraysandLists
         //Question-2
 
         // Ask the user to enter their name. Use an array to reverse the name and then store the result in a new string. 
-        /// Display the reversed name on the console.
+        // Display the reversed name on the console.
         
         public void Question2()
         {
@@ -59,6 +59,37 @@ namespace CSharpExercise2.ArraysandLists
 
             var reversedName = new string(array);
             Console.WriteLine("Reversed name is: " + reversedName);
+        }
+
+        //Question-3
+
+        // Write a program and ask the user to enter 5 numbers. If a number has been previously entered, display 
+        // an error message and ask the user to re-try. Once the user successfully enters 5 unique numbers, sort them 
+        // and display the result on the console.
+
+        public void Question3()
+        {
+            var numbers = new List<int>();
+
+            while (numbers.Count < 5)
+            {
+                Console.WriteLine("Enter a number: ");
+                var number = Convert.ToInt32(Console.ReadLine());
+                if (numbers.Contains(number))
+                {
+                    Console.WriteLine("You have previously entered " + number);
+                    continue;
+                }
+
+                numbers.Add(number);
+            }
+            numbers.Sort();
+
+            Console.WriteLine("Sorted numbers: ");
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }                
         }
     }
 }
