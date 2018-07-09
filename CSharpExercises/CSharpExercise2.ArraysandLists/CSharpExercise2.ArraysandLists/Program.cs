@@ -16,8 +16,11 @@ namespace CSharpExercise2.ArraysandLists
             //Lists question2 = new Lists();
             //question2.Question2();
 
-            Lists question3 = new Lists();
-            question3.Question3();
+            //Lists question3 = new Lists();
+            //question3.Question3();
+
+            Lists question4 = new Lists();
+            question4.Question4();
         }
     }
 }
